@@ -1,9 +1,13 @@
 # frozen_string_literal: true
-require 'open3'
 require 'yaml'
 require 'shellwords'
 require 'tempfile'
 require 'fileutils'
+
+require 'kubernetes-deploy/common'
+require 'kubernetes-deploy/oj'
+require 'kubernetes-deploy/concurrency'
+require 'kubernetes-deploy/resource_cache'
 require 'kubernetes-deploy/kubernetes_resource'
 %w(
   custom_resource

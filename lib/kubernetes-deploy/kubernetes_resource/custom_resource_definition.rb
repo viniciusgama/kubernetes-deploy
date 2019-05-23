@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 require 'kubernetes-deploy/rollout_conditions'
+require 'kubernetes-deploy/duration_parser'
 
 module KubernetesDeploy
   class CustomResourceDefinition < KubernetesResource
